@@ -1,0 +1,75 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modelo para elaboracao de TCC (Trabalho de Conclusão do Curso)
+% Autor: Kleber de Oliveira Andrade
+% data da última atualização: 08/12/2014
+% Versão 0.1 (beta 1)
+
+\input{config/tcc-pacotes}
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+%\input{texto/capa}
+%\input{texto/folha-de-rosto}
+\input{texto/dedicatoria}
+\input{texto/agradecimentos}
+\input{texto/epigrafe}
+\input{texto/resumo-pt}
+\input{texto/resumo-en}
+%\input{config/listas}
+%\input{texto/abreviaturas}
+%\input{texto/simbolos}
+%\input{config/indices}
+
+%\textual
+
+%\input{texto/capitulo-1}
+%\input{texto/capitulo-2}
+%\input{texto/capitulo-3}
+%\input{texto/capitulo-4}
+%\input{texto/capitulo-5}
+%\input{texto/capitulo-6}
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\postextual
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+\bibliography{referencias}
+
+% ----------------------------------------------------------
+% Apêndices
+% ----------------------------------------------------------
+
+\begin{apendicesenv}
+
+    \partapendices % Imprime uma página indicando o início dos apêndices
+
+    \input{texto/apendice-1}
+    \input{texto/apendice-2}
+
+\end{apendicesenv}
+
+% ----------------------------------------------------------
+% Anexos
+% ----------------------------------------------------------
+
+\begin{anexosenv}
+
+    \partanexos % Imprime uma página indicando o início dos anexos
+
+    \input{texto/anexo-1}
+    \input{texto/anexo-2}
+
+\end{anexosenv}
+
+
+\end{document}
